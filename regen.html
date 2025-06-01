@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id= "survey">Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey form for census </h1>
+    <p id="description">(please provide correct information)</p>
+    <div class="box">
+<form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <br>
+    <input type="text" id= "name" placeholder="Enter your name" required><br>
+    <label id="email-label" for="email">Email</label>
+    <br>
+    <input type="email"placeholder="eg:name@gmail.com" id="email" required><br>
+<label id="number-label" for="number">Age:</label><br>
+<input type="number" id="number" min="0" max="130" required><br>
+<label for="dropdown" >Select your province</label>
+<select id="dropdown" name="province" required>
+<option value="province1">Koshi province</option>
+<option value="province2">Mahdesh province</option>
+<option value="province3">Bagmati province</option>
+<option value="province4">Gandaki province</option>
+<option value="province5">Lumbini province</option>
+<option value="province6">Karnali provicne</option>
+<option value="province7">Sudurpaschim province</option>
+</select>
+<br>
+<p>Gender</p>
+<label><input type="radio" name="gender" value="male" required/>Male</label>
+<label><input type="radio" name="gender" value="female" required/>Female</label>
+<label><input type="radio" name="gender" value="other" required/>Other</label>
+<p>Which language do you speak?</p>
+<label><input type="checkbox" name="language" value="nepali"/>Nepali</label>
+<label><input type="checkbox" name="language" value="newari"/>Newari</label>
+<label><input type="checkbox" name="language" value="maithli"/>Maithli</label>
+<label><input type="checkbox" name="language" value="Enlish"/>English</label>
+<label><input type="checkbox" name="language" value="Others"/>Others</label>
+<br><br>
+<label for="suggestion">Suggestions for improvement.</label><br>
+<textarea id="suggestion" placeholder="your suggestions" rows="5"></textarea><br>
+<button type="submit" id="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
