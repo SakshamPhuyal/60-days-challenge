@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#second{
+    background-color: bisque;
+}
+#header{
+    height: 80px;
+    background-color: #004B49;
+text-align: center;
+align-items: center;
+padding-top: 45px;
+margin-bottom: 30px;
+}
+
+
+#image{
+ 
+  height:300px;
+  max-width:100%;
+  display:block;
+  margin:0 auto;
+  margin-bottom:20px;
+}
+#tribute-info,#achievements,#img-caption,p,a{
+  max-width:500px;
+
+  margin:0 auto;
+}
+#img-caption{
+    text-decoration:underline;
+}
+
+    #first{
+  background:linear-gradient(135deg,#89f7fe 0%,#66a6ff 100%);
+}
+.box{
+  width:400px;
+ background: linear-gradient(60deg, #96fbc4 0%, #f9f586 100%);
+ margin:40px auto;
+ padding:30px;
+ border-radius:20px;
+}
+button{
+  width:100px;
+  background-color:rgb(110, 179, 110);
+  cursor:pointer;
+}
+#title{
+
+text-align:center;
+}
+#description{
+  margin-top:-20px;
+ text-align:center;
+}
