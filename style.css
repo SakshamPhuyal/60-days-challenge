@@ -90,3 +90,80 @@ main{
 .main-section{
 margin:30px;
 }
+.nav{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navlogo{
+height:50px;
+width:137px;
+
+}
+.logo{
+    background-image: url(amazon-logo-black-background-xb9pdemosnjfz9ej.jpg);
+    height:50px;
+    width:137px;
+    background-size:cover;
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover {
+    border:2px solid white;
+   }
+.navaddress{
+    margin-right: 13px;
+    margin-left:13px;
+    font-size: 12px;
+    color:#cccccc;
+
+}
+.locsym{
+    font-size: 14px;
+    color: white;
+}
+.nav-search{
+    display:flex;
+   
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+}
+.searchsym{
+    align-content: center;
+    text-align: center;
+    width:45px;
+    height:40px;
+    border:none; 
+    background-color: #febd68;
+   font-size: 1.2rem;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 51px;
+    height: 40px;
+    border:none;
+}
+.search-input{
+height: ;
+width: 450px;
+border:none;
+}
+span{
+    font-size: 12px;
+}
+.reg{
+    font-size: 14px;
+    font-weight: 700;
+}
+.nav-cart i{
+font-size: 30px;
+}
+.nav-cart{
+    font-size: 14px;
+    font-weight: 700;
+}
