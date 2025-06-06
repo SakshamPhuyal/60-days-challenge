@@ -167,3 +167,37 @@ font-size: 30px;
     font-size: 14px;
     font-weight: 700;
 }
+#six{
+  background-color: #f9f586;
+  font-size:2rem;
+  width: 200px;
+  height:100px;
+  margin: 100px;
+  border-radius: 20px;
+}
+#six:hover{
+  background-color: aqua;
+  transform:rotate(45deg);
+}
+#second{
+  background-color: #f9f586;
+  font-size:2rem;
+  width: 200px;
+  height:100px;
+  margin: 100px;
+  border-radius: 20px;
+}
+#second:hover{
+  transform: translateX(100px);
+}
+#third{
+    background-color: #f9f586;
+  font-size:2rem;
+  width: 200px;
+  height:100px;
+  margin: 100px;
+  border-radius: 20px;
+}
+#third:hover{
+  transform: skew(30deg);
+}
