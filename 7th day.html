@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rotating Box</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100dvh;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotateBox 5s infinite linear;
+    }
+
+    .card {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      line-height: 200px;
+      text-align: center;
+      font-size: 20px;
+      color: #000;
+      backface-visibility: hidden;
+    }
+
+    #front  { transform: rotateY(  0deg) translateZ(100px); background: red;    }
+    #back   { transform: rotateY(180deg) translateZ(100px); background: green;  }
+    #right  { transform: rotateY( 90deg) translateZ(100px); background: blue;   }
+    #left   { transform: rotateY(-90deg) translateZ(100px); background: orange; }
+    #top    { transform: rotateX( 90deg) translateZ(100px); background: yellow; }
+    #buttom { transform: rotateX(-90deg) translateZ(100px); background: purple; }
+
+    @keyframes rotateBox {
+      0%   { transform: rotateX(0deg) rotateY(0deg); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="front">Front</div>
+    <div class="card" id="back">Back</div>
+    <div class="card" id="right">Right</div>
+    <div class="card" id="left">Left</div>
+    <div class="card" id="top">Top</div>
+    <div class="card" id="buttom">Bottom</div>
+  </div>
+</body>
+</html>
