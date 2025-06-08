@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+   background: linear-gradient(135deg, #000000, #111111, #1a1a1a);
+    margin:0px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:70px;
+    background-color: #333333;
+    background-color: rgba(51, 77, 81, 0.7); 
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin: 0 26px;
+}
+.left{
+    font-size: 2rem;
+   
+}
+.right{
+    font-size: 1.2rem;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     margin :23px 0;
+    
+}
+
+.ls{
+   margin-right:150px;
+    width: 30%;
+  
+}
+img{
+    border-radius:50%;
+    object-fit: cover;
+}
+.rs{
+    width:33%;
+    margin-top: 40px;
+}
+#name{
+    color: orangered;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:aqua;
+    font-size: 1.08rem;
+}
+p{
+   margin: 10px;
+    font-size: 1.2rem;
+color:rgb(225, 210, 210);
+text-align: justify;
+white-space: pre-wrap; 
+word-wrap: break-word; 
+line-height: 1.5;
+
+}
+.intro{ 
+    margin: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 52%;
+}
+.icons.fa-brands{
+    color:#bbb;
+}
+.icons i {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px 5px rgba(17, 255, 0, 0.7); 
+border-radius: 50%;
+}
+.icons{
+    width: 1%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+font-size: 1.6rem; 
+}
+.tols{
+    margin-bottom: 10px;
+}
+.me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     
+    margin-bottom: 5px;
+}
+.edu{
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+.sub{
+    font-size: 1.1rem;
+}
+.logo{
+    font-size: 2rem;
+    margin: 20px;
+    margin-left: -3px;
+}
+.expertise{
+    margin-left: 218px;
+}
+.icons i:hover {
+    color: aqua;
+    font-size:1.6rem ;
+    transform: rotate(360deg);
+}
