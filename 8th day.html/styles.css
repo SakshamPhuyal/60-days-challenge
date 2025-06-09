@@ -113,14 +113,15 @@ font-size: 1.6rem;
 .edu{
     font-size: 1.5rem;
     margin-bottom: 100px;
+    margin-left:100px ;
 }
 .sub{
     font-size: 1.1rem;
 }
+
 .logo{
     font-size: 2rem;
     margin: 20px;
-    margin-left: -3px;
 }
 .expertise{
     margin-left: 218px;
