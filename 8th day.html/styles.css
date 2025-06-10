@@ -131,3 +131,57 @@ font-size: 1.6rem;
     font-size:1.6rem ;
     transform: rotate(360deg);
 }
+.proholder{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.space {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    border:2px solid #fff;
+    margin-top: 20px; 
+}
+  
+  .leftpart {
+    width: 50%;
+  }
+  
+  .tasbir {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 90%;     
+    height: 150px;
+    object-fit: contain; 
+    border-radius: 0;
+  }
+  .rightpart{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  h3{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .descp{
+    font-size: 17px;
+    white-space: normal;
+    overflow: hidden;
+    
+}
+.github-button{
+background-color: aqua;
+font-size: 15px;
+padding : 10px 15px;
+margin-left: 20px ;
+border-radius:8px;
+}
