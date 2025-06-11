@@ -185,3 +185,62 @@ padding : 10px 15px;
 margin-left: 20px ;
 border-radius:8px;
 }
+.container.comtactinfo.box.icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+}
+.container.contactinfo.box.text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.contactinfo.box{
+display: flex;
+align-items: center;
+margin: 10px 0;
+}
+.contactform{
+    width: 38%;
+    padding: 40px;
+    background:#fff ;
+    color: black;
+    margin-right: 25px;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputbox input,textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    resize: none;
+}
+.inputbox input[type=submit]{
+    width: 100px;
+    background: #00bcd4;
+}
+.contactinfo{
+width: 43%;
+
+
+}
+.content{
+    width: 20%;
+}
+.text{
+    margin-left: 10px;
+}
+.naam{
+    position: absolute;
+    top: -10px; 
+  left: 0px;
+}
