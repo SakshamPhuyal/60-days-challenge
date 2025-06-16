@@ -10,11 +10,13 @@ do{
     if(j%7==0){
     console.log("The number divisible by seven is:",j);}
     j++;
-}while(j<50);
+}
+while(j<50);
 console.log("Example of For-of loop");
 let string="Saksham";
 for(let i of string){
-    console.log("i=",i);}
+    console.log("i=",i);
+}
 console.log("Example of For-in loop");
 let student={
     name:"saksham",
