@@ -16,7 +16,6 @@ class Car {
     this.model = model;
     this.year = year;
   }
-
   start() {
     console.log(`${this.brand} ${this.model} started`);
   }
@@ -24,8 +23,6 @@ class Car {
     console.log( `This car you watching is ${this.brand} ${this.model} made on ${this.year}`);
 }
 }
-
-
 const car1 = new Car("Lamborgini", "Urus", 2023);
 const car2 = new Car("Ford", "Mustang", 2024);
 const car3= new Car("Toyota", "Supra", 2025)
