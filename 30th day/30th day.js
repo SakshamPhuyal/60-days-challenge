@@ -6,7 +6,6 @@ const fetchData = () => {
     }, 2000);
   });
 };
-
 fetchData()
   .then((result) => {
     console.log("Success:", result);
@@ -23,7 +22,6 @@ function stepOne() {
     }, 1000);
   });
 }
-
 function stepTwo(data) {
   return new Promise((resolve) => {
     setTimeout(() => {
