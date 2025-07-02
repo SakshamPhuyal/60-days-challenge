@@ -1,4 +1,4 @@
-console.log("Async-Await in JS")
+console.log("Async-Await in JS");
 function wait(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
