@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("newQuoteBtn");
 
   const fetchQuote = () => {
-    fetch("https://dummyjson.com/quotes/random")
+    fetch("https://zenquotes.io/api/today")
       .then(res => {
         if (!res.ok) throw new Error("Network error");
         return res.json();
@@ -18,5 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   fetchQuote(); // load once on page load
-  button.addEventListener("click", fetchQuote); // load on button click
+  button.addEventListener("click", fetchQuote);
 });
