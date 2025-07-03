@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error fetching quote:", error);
       });
   };
-
-  fetchQuote(); // load once on page load
+  fetchQuote();
   button.addEventListener("click", fetchQuote);
 });
