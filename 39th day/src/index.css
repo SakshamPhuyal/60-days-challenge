@@ -1,0 +1,51 @@
+.container{
+text-align: center;
+}
+.paara{
+  font-size: 10rem;
+  margin-top: 0;
+}
+.but{
+  width:150px;
+  height: 55px;
+  font-size: 1.4em;
+  margin: 0px 11px;
+  background-color: rgb(31, 37, 35);
+  color: aliceblue;
+  border: none ;
+  border-radius: 20px;
+  cursor: pointer;
+}
+div {
+
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+button {
+  margin: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
