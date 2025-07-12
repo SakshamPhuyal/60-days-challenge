@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 30px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+div {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-
