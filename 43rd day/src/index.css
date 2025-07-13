@@ -1,0 +1,63 @@
+/* List.css */
+
+.list-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.list-title {
+  text-align: center;
+  color: #2d8f5e;
+  margin-bottom: 20px;
+}
+
+.food-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.food-item {
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.food-item:hover {
+  background-color: #ffe0e0;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.food-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.add-button {
+  padding: 10px 16px;
+  background-color: #2d8f5e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #256947;
+}
