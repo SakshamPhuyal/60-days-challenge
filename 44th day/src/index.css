@@ -1,0 +1,65 @@
+.to-do-list{
+  align-items: center;
+  text-align: center;
+  border: 4px solid aqua;
+  border-radius: 20px;
+margin: 100px auto;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+h1{
+  font-size: 4rem;
+
+}
+button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  background-color: rgba(211, 236, 215, 0.479);
+  cursor: pointer;
+border-radius: 10px;
+margin-left: 10px;
+}
+.add-button{
+  background-color: bisque;
+}
+.add-button:hover{
+  background-color:green;
+}
+.delete-button{
+  background-color: bisque;
+}
+.delete-button:hover{
+  background-color:rgba(201, 10, 10, 0.685);
+}
+.move-button{
+background-color: rgb(133, 87, 30);
+border: 1.7px solid;
+border-radius: 10px;
+margin-left: 10px;
+}
+.move-button:hover{
+opacity: 70%;
+}
+.text{
+  
+  flex:1;
+  font-size: 1.99rem;
+}
+li{
+  display: flex;
+  font-size: 1.8rem;
+  border: 1px solid aqua;
+  padding: 19px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+input{
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
