@@ -1,0 +1,24 @@
+body{
+  background-image: url(https://imgs.search.brave.com/f_RwVJ8xdK1gq6YafRHddIUX6wyXE4fCTAzgW_F3YsM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jbG9zZXVwLWJs/YWNrLXdhbGwtY2xv/Y2stYmxhY2stY2hh/bGtib2FyZC1iYWNr/Z3JvdW5kXzczNzYy/LTEzMzMuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA);
+  background-repeat: no-repeat;
+ background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.clock-container{
+display: flex;
+justify-content: center;
+min-height: 100vh;
+align-items: center;
+backdrop-filter: blur(5px);
+padding: 10px 0 10px 0;
+}
+.clock{
+  font-size: 5rem;
+  color: aliceblue
+}
+h1{
+  text-align: center;
+  color: aliceblue;
+  font-size: 3rem;
+}
