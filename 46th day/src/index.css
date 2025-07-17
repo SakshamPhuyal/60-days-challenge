@@ -2,6 +2,10 @@
   padding: 5px;
 }
 .component{
-  width:700px ;
+  width:720px ;
+  border: 1px solid ;
+}
+.componentB{
+    width:650px ;
   border: 1px solid ;
 }

@@ -5,7 +5,7 @@ function MycomponentB() {
   const user = useContext(UserContext); 
 
   return (
-    <div className="component">
+    <div className="componentB">
       <h1>Component B</h1>
       <h2>{`Bye ${user}`}</h2>
     </div>
