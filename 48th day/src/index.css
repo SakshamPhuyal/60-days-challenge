@@ -1,0 +1,44 @@
+body{
+  background-image: url(https://imgs.search.brave.com/f_RwVJ8xdK1gq6YafRHddIUX6wyXE4fCTAzgW_F3YsM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jbG9zZXVwLWJs/YWNrLXdhbGwtY2xv/Y2stYmxhY2stY2hh/bGtib2FyZC1iYWNr/Z3JvdW5kXzczNzYy/LTEzMzMuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MA);
+  background-repeat: no-repeat;
+ background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1{
+  font-size: 3rem;
+  color: azure;
+}
+.stopwatch{
+
+    text-align: center;
+  width: 500px;
+  height: 300px;
+  border: 3px solid rgba(20, 184, 206, 0.986) ;
+  margin: 119px auto;
+  border-radius: 20px;
+}
+button{
+  font-size: 2rem;
+  margin-top: 30px;
+margin-left: 30px;
+cursor: pointer;
+border-radius: 10px;
+}
+.start{
+  background-color: rgb(9, 202, 51);
+}
+.stop{
+  background-color: red;
+}
+.reset{
+  background-color: bisque;
+}
+.display{
+  font-size: 3.8rem;
+  font-weight: bold; 
+  color: aliceblue;
+}
+button:hover{
+  opacity: 84%;
+}
