@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survey Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="first" class="bg-gradient-to-tr from-cyan-300 to-blue-400 min-h-screen">
+
+  <h1 id="title" class="text-center text-4xl font-bold mt-8 mb-2">Survey form for census</h1>
+  <p id="description" class="text-center mb-3 text-gray-800">(please provide correct information)</p>
+
+  <div class="box w-96 bg-gradient-to-br from-green-300 via-yellow-300 to-yellow-200 mx-auto p-8 rounded-3xl shadow-lg">
+    <form id="survey-form" class="flex flex-col space-y-4">
+      
+      <label id="name-label" for="name" class="font-semibold">Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required
+        class="border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+      />
+
+      <label id="email-label" for="email" class="font-semibold">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="eg: name@gmail.com"
+        required
+        class="border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+      />
+
+      <label id="number-label" for="number" class="font-semibold">Age:</label>
+      <input
+        type="number"
+        id="number"
+        min="0"
+        max="130"
+        required
+        class="border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+      />
+
+      <label for="dropdown" class="font-semibold">Select your province</label>
+      <select
+        id="dropdown"
+        name="province"
+        required
+        class="border border-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+      >
+        <option value="province1">Koshi province</option>
+        <option value="province2">Mahdesh province</option>
+        <option value="province3">Bagmati province</option>
+        <option value="province4">Gandaki province</option>
+        <option value="province5">Lumbini province</option>
+        <option value="province6">Karnali province</option>
+        <option value="province7">Sudurpaschim province</option>
+      </select>
+
+      <p class="font-semibold mt-4">Gender</p>
+      <div class="flex gap-6">
+        <label class="inline-flex items-center space-x-2">
+          <input type="radio" name="gender" value="male" required class="form-radio text-green-500" />
+          <span>Male</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="radio" name="gender" value="female" required class="form-radio text-green-500" />
+          <span>Female</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="radio" name="gender" value="other" required class="form-radio text-green-500" />
+          <span>Other</span>
+        </label>
+      </div>
+
+      <p class="font-semibold mt-4">Which language do you speak?</p>
+      <div class="flex flex-wrap gap-4">
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" name="language" value="nepali" class="form-checkbox text-green-500" />
+          <span>Nepali</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" name="language" value="newari" class="form-checkbox text-green-500" />
+          <span>Newari</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" name="language" value="maithli" class="form-checkbox text-green-500" />
+          <span>Maithli</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" name="language" value="English" class="form-checkbox text-green-500" />
+          <span>English</span>
+        </label>
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" name="language" value="Others" class="form-checkbox text-green-500" />
+          <span>Others</span>
+        </label>
+      </div>
+
+      <label for="suggestion" class="font-semibold mt-4">Suggestions for improvement.</label>
+      <textarea
+        id="suggestion"
+        placeholder="Your suggestions"
+        rows="5"
+        class="border border-gray-400 rounded px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-400"
+      ></textarea>
+
+      <button
+        type="submit"
+        id="submit"
+        class="w-24 bg-green-600 text-white rounded-md py-2 mt-2 hover:bg-green-700 transition"
+      >
+        Submit
+      </button>
+
+      <a
+        href="https://censusnepal.cbs.gov.np/Home/Index/EN"
+        target="_blank"
+        class="text-center block mt-6 text-blue-600 underline hover:text-blue-800"
+      >
+        To get previous census data click here
+      </a>
+    </form>
+  </div>
+
+</body>
+</html>
