@@ -33,7 +33,6 @@ const person1: person = {
   email: "Sakshamphuyal@gmail.com",
   userId: 1234,
 };
-
 console.log("Person Info:", person1);
 console.log("Classes in TS");
 class USER{
@@ -43,8 +42,7 @@ private readonly city:string="kathmandu"//cant be accessed below
     constructor(email:string,name:string){
         this.email=email;
         this.name=name;
-    }
-}
+    }}
 const saksham=new USER("ps@gmail.com","saksham");
 console.log("USER:", saksham);
  class student{
@@ -84,3 +82,31 @@ function printarrays <type>(array: type[]):void{
 }
 printarrays<number>([1,2,3]);
 printarrays<string>(["sak","sh","am"]);
+console.log("typeof in TS");
+function printId(id: number | string) {
+  if (typeof id === "string") {
+    console.log("ID as string: " + id.toUpperCase());
+  } else {
+    console.log("ID as number: " + id.toFixed(2));
+  }}
+printId("abc123");
+printId(456); 
+console.log("instanceof in TS");
+class Dog {
+  bark() {
+    console.log("Woof!");
+  }}
+class Cat {
+  meow() {
+    console.log("Meow!");
+  }}
+function speak(animal: Dog | Cat) {
+  if (animal instanceof Dog) {
+    animal.bark();
+  } else {
+    animal.meow();
+  }}
+const dog = new Dog();
+const cat = new Cat();
+speak(dog);
+speak(cat);
