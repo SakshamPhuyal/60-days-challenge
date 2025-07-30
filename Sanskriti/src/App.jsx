@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react';
 import {Routes,Route} from 'react-router-dom'
 import './App.css'
 import './index.css'
@@ -10,6 +10,10 @@ import Cart from './Components/Pages/cart';
 import Flipcard from './Components/Pages/flipcard';
 import Shop from './Components/Pages/shop';
 function App() {
+const [cartItems,setCartItems]=useState([]);
+const handleAddToCart=(product)=>{
+  setCartItems((prevItems)=>[...prevItems,product]);
+};
   return (
     <>
   <div>
@@ -18,9 +22,9 @@ function App() {
 <Route path='/' element={<Home/>} /> 
 <Route path='/explore' element={<Explore/>} /> 
 <Route path='/contact' element={<Contact/>} />  
-<Route path='/cart' element={<Cart />} /> 
+<Route path='/cart' element={<Cart items={cartItems} />} />
 <Route path='/flipcard' element={<Flipcard/>} /> 
-<Route path='/shop' element={<Shop  />} /> 
+<Route path='/shop' element={<Shop onAddToCart={handleAddToCart} />} /> 
     </Routes>
   </div>
     </>
