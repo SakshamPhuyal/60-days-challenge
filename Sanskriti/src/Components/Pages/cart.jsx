@@ -1,5 +1,6 @@
 //send to login after button
 import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -43,6 +44,21 @@ const Cart = ({ items: initialItems }) => {
     const quantity = quantities[index] || 1;
     return total + price * quantity;
   }, 0);
+    const handleOrderNow = () => {
+    if(items.length === 0) {
+      toast.error("Cart is empty. Add items before ordering!");
+      return;
+    }
+    toast.success("Order placed successfully!", {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: false,
+      pauseOnHover: true,
+      theme: 'colored',
+    });
+    setItems([]);
+  setQuantities([]);
+  };
   return (
     <div>
       <div className="min-h-screen bg-gradient-to-b from-[#B07A5A] to-[#FFD89A] p-10 gap-10 flex justify-center">
@@ -76,7 +92,8 @@ const Cart = ({ items: initialItems }) => {
                     <p className='text-3xl mr-2'>Rs. {totalPrice}</p>
           </div>
           <div className='flex justify-center mt-10'>
-          <button className='bg-black text-white w-40 h-10 rounded-2xl justify-center  cursor-pointer hover:opacity-85 text-2xl'> Order now</button>
+          <button className='bg-black text-white w-40 h-10 rounded-2xl justify-center  cursor-pointer hover:opacity-85 text-2xl'
+          onClick={handleOrderNow}> Order now</button>
           </div>
         </div>
       </div>

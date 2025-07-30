@@ -1,4 +1,6 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+
 import dokoImg from '../../assets/doko.png';
 import daloImg from '../../assets/dalo.png';
 import pathiImg from '../../assets/pathi.png';
@@ -100,10 +102,17 @@ const products = [
 ];
 
 const Shop = ({onAddToCart}) => {
-  const handleClick = (item) => {
+const handleClick = (item) => {
   onAddToCart(item);
-  alert(`${item.title} added to cart!`);
+  toast.success(`${item.title} added to cart!`, {
+    position: 'top-right',
+    autoClose: 2000,
+    hideProgressBar: false,
+    pauseOnHover: true,
+    theme: 'colored',
+  });
 };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#B07A5A] to-[#FFD89A] p-10 gap-10">

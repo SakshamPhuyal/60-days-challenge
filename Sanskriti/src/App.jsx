@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {Routes,Route} from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import './index.css'
 import Nav from './Components/nav/nav';
@@ -26,6 +28,7 @@ const handleAddToCart=(product)=>{
 <Route path='/flipcard' element={<Flipcard/>} /> 
 <Route path='/shop' element={<Shop onAddToCart={handleAddToCart} />} /> 
     </Routes>
+    <ToastContainer />
   </div>
     </>
   ); 
